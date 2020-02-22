@@ -1,2 +1,0 @@
-DROP TABLE IF EXISTS test;
-CREATE TABLE usr(id serial PRIMARY KEY, name VARCHAR(255));

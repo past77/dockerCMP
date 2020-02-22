@@ -1,6 +1,0 @@
-app/service/IUserService.class
-app/controller/Controller.class
-app/repositiry/UsrRepository.class
-app/service/UserService.class
-app/SpringBootTomcatApplication.class
-app/model/User.class
