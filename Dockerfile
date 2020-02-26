@@ -5,9 +5,9 @@ MAINTAINER pavlo_polozhevets
 RUN mkdir /opt/tomcat/
 
 WORKDIR /opt/tomcat
-RUN curl -LO http://apache.ip-connect.vn.ua/tomcat/tomcat-9/v9.0.31/bin/apache-tomcat-9.0.31.tar.gz
+RUN curl -LO https://downloads.apache.org/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz
 RUN tar -xf apache*.tar.gz
-RUN mv apache-tomcat-9.0.31/* /opt/tomcat/.
+RUN mv apache-tomcat-8.5.51/* /opt/tomcat/.
 RUN yum -y install java
 RUN java -version
 

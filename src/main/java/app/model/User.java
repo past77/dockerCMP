@@ -16,14 +16,13 @@ public class User {
         this.id = id;
         this.name = name;
     }
-///jdbc:postgresql://postgres:12345@postgres/ttt
     public User(){}
 
     public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
