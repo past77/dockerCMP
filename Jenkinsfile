@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh  'set -x'
                 sh    'pwd'
-               sh 'cp -f target/helloSpring ./'
+               sh 'cp -f target/helloSpring.war ./'
       
             }
         }
