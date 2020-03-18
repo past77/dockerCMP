@@ -14,7 +14,7 @@ pipeline {
          stage('Deliver') { 
             steps {
                 sh  'set -x'
-                sh  'java -jar target/helloSpring.war'
+      
             }
         }
          stage('Deploy') {
