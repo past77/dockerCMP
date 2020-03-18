@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh  'set -x'
                 sh    'pwd'
-               sh 'mv target/helloSpring.war hhh.war'
+               sh 'mv target/helloSpring.war /home/user/execute.war'
       
             }
         }
