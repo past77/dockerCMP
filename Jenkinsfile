@@ -11,16 +11,7 @@ pipeline {
                 sh 'mvn test' 
             }
         }
-        stage('Deliver') { 
-            steps {
-                sh  'set -x'
-                sh  'mvn jar:jar install:install help:evaluate -Dexpression=project.name'
-                sh  'set +x'
-
-                sh  'set -x'
-                sh  'java -jar target/helloSpring.war'
-            }
-        }
+        
          stage('Deploy') {
             when {
               expression {
