@@ -10,8 +10,13 @@ pipeline {
             steps {
                 sh 'mvn test' 
             }
+        }        
+         stage('Deliver') { 
+            steps {
+                sh  'set -x'
+                sh  'java -jar target/helloSpring.war'
+            }
         }
-        
          stage('Deploy') {
             when {
               expression {
