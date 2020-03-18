@@ -22,7 +22,7 @@ pipeline {
                 sh  'set +x'
 
                 sh  'set -x'
-                sh  'VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"`'
+                sh  'VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\\[]"`'
                 sh  'set +x'
 
                 sh  'set -x'
