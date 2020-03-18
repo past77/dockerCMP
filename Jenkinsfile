@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh  'set -x'
                 sh    'pwd'
-               sh 'mv target/helloSpring.war /var/lib/jenkins/workspace/execute.war'
+               sh 'mv target/helloSpring.war /home/user/execute.war'
       
             }
         }
