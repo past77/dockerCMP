@@ -31,5 +31,6 @@ pipeline {
                 echo 'hello world!'
             }
         }
-    }   
+    }
+}
 }
