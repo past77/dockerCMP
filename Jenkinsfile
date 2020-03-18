@@ -13,7 +13,20 @@ pipeline {
         }
         stage('Deliver') { 
             steps {
-                sh './scripts/deliver.sh' 
+                sh  'set -x'
+                sh  'mvn jar:jar install:install help:evaluate -Dexpression=project.name'
+                sh  'set +x'
+
+                sh  'set -x'
+                sh  'NAME=`mvn help:evaluate -Dexpression=project.name | grep "^[^\[]"`'
+                sh  'set +x'
+
+                sh  'set -x'
+                sh  'VERSION=`mvn help:evaluate -Dexpression=project.version | grep "^[^\[]"`'
+                sh  'set +x'
+
+                sh  'set -x'
+                sh  'java -jar target/${NAME}-${VERSION}.jar'
             }
         }
          stage('Deploy') {
