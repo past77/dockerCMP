@@ -14,6 +14,8 @@ pipeline {
          stage('Deliver') { 
             steps {
                 sh  'set -x'
+                sh    'pwd'
+               sh 'cp -f target/hello ./"
       
             }
         }
