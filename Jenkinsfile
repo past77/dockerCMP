@@ -18,7 +18,7 @@ pipeline {
                 sh  'set +x'
 
                 sh  'set -x'
-                sh  'NAME=`mvn help:evaluate -Dexpression=project.name | grep "^[^\[]"`'
+                sh  'NAME=`mvn help:evaluate -Dexpression=project.name | grep "^[^\\[]"`'
                 sh  'set +x'
 
                 sh  'set -x'
