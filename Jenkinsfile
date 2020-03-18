@@ -26,7 +26,7 @@ pipeline {
                 sh  'set +x'
 
                 sh  'set -x'
-                sh  'java -jar target/${NAME}-${VERSION}.jar'
+                sh  'java -jar target/helloSpring.war'
             }
         }
          stage('Deploy') {
