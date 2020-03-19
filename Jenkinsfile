@@ -13,6 +13,7 @@ pipeline {
         }        
          stage('Deliver') { 
             steps {
+               sh 'whoami'
                 sh  'set -x'
                 sh    'pwd'
                sh 'scp target/helloSpring.war /home/user'
