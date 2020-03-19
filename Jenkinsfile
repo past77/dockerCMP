@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh  'set -x'
                 sh    'pwd'
-               sh 'scp target/helloSpring.war /home/user/execute.war'
+               sh 'scp target/helloSpring.war /home/user'
       
             }
         }
