@@ -16,7 +16,7 @@ pipeline {
                sh 'whoami'
                 sh  'set -x'
                 sh    'pwd'
-               sh 'cp target/helloSpring.war /home/polozhevets'
+               sh 'cp target/helloSpring.war /home/polozhevets/new'
       
             }
         }
